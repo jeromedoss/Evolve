@@ -1,0 +1,32 @@
+{
+    "tenantId": "102",
+    "propertyId": "114",
+    "primaryGuestProfileId": "",
+    "allocationId": "",
+    "status": "RESERVED",
+    "arrivalDate": "",
+    "departureDate": "",
+    "numberOfAdults": 2,
+    "numberOfChildren": 0,
+    "rateSnapshots": [
+        
+    ],
+    "paymentSettings": [
+        {
+            "doNotDisclose": false,
+            "header": "Cash",
+            "paymentClass": "CASH",
+            "paymentMethodId": "294f0b28-581e-470d-a8f7-89beaa706297",
+            "paymentMethodSetting": {
+                "allowCharging": false,
+                "allowChargingAfterCheckout": false,
+                "allowAuthorizationIncreases": false,
+                "thirdParty": false,
+                "useForDeposit": false,
+                "defaultPaymentSetting": true,
+                "profilePaymentMethod": true,
+                "primaryProfilePaymentMethod": true
+            }
+        }
+    ]
+}

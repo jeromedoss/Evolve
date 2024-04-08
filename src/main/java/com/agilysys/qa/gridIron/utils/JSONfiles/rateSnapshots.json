@@ -1,0 +1,17 @@
+{
+	"date": "",
+	"ratePlanId": "",
+	"roomRate": 100,
+	"preOccupancyRate": 100,
+	"extraAdultCharge": 10,
+	"extraChildrenCharge": 10,
+	"roomTypeId": "",
+	"roomTypeCode": "",
+	"adultsIncluded": 2,
+	"childrenIncluded": 0,
+	"overridden": false,
+	"overbooked": false,
+	"cancellationPolicyId": "",
+	"transactionItemId": "3aa88441-c0bd-4c86-9671-0bd42ff3bf27",
+	"rateType": ".FullDayRateSnapshot"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" configfailurepolicy="continue"
+        parallel="classes" thread-count="5">
+
+    <parameter name="remote" value="false"/>
+    <parameter name="remoteUrl" value=""/>
+    <parameter name="headless" value="true"/>
+
+    <listeners>
+
+        <listener
+                class-name="com.agilysys.qa.gridIron.utils.listeners.TestNGCustomReportListener"/>
+        <listener
+                class-name="com.agilysys.qa.gridIron.utils.listeners.TestResultsAnalyzer"/>
+        <listener
+                class-name="com.agilysys.qa.gridIron.utils.annotations.AnnotationTransformer"/>
+        <listener
+                class-name="com.agilysys.qa.gridIron.utils.listeners.JiraListener"/>
+
+    </listeners>
+
+	<test name="UI Automation" preserve-order="true">
+		<classes>
+
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestBookReservationPaymentMethods" />
+
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationSummary" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationModifyStayRegularRatePlan" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationModifyStayPackageRatePlan" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationRoomAssignment" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationPaymentMethods" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationFolios" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationCheckIn" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestReservationCancel" />
+			<class
+				name="com.agilysys.qa.gridIron.service.profile.TestCreateProfiles" />
+			<class
+				name="com.agilysys.qa.gridIron.service.servicerequest.TestMTServiceRequest" />
+			<class
+				name="com.agilysys.qa.gridIron.service.servicerequest.TestHKServiceRequest" />
+			<class
+				name="com.agilysys.qa.gridIron.service.servicerequest.TestInventoryBlock" />
+
+
+			<class
+				name="com.agilysys.qa.gridIron.service.account.TestARFolios" />
+
+
+			<class
+				name="com.agilysys.qa.gridIron.common.TestBatchOperations" />
+			<class
+				name="com.agilysys.qa.gridIron.service.account.TestReservationRoutingRuleAndTransfer" />
+			<class
+				name="com.agilysys.qa.gridIron.service.account.TestGroupFolios" />
+
+
+			<class name="com.agilysys.qa.gridIron.common.TestSearch" />
+
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestModifyStayforCCReservation" />
+			<class
+				name="com.agilysys.qa.gridIron.service.reservation.TestModifyStayforCashReservation" />
+
+		</classes>
+	</test>
+
+
+</suite>
